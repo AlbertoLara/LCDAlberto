@@ -50,6 +50,7 @@ namespace PrimerEjercicio
             Descomprimir.CopyTo(ArchivoDescomprimido);
             Console.Clear();
             Console.WriteLine("EL ARCHIVO FUE DESCOMPRIMIDO COMPLETAMENTE");
+
         }
         public void ExecuteCommand(string archivo)
         {
