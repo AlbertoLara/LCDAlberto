@@ -31,7 +31,7 @@ BEGIN
 
 SELECT @xmlDoc = BulkColumn
 FROM OPENROWSET (
-	BULK 'D:\Mis documentos\GitHub\LCDAlberto\PrimerEjercicio\PrimerEjercicio\bin\archivos\a1nuevo.xml', SINGLE_CLOB 
+	BULK 'c:\archivo\a1nuevo.xml', SINGLE_CLOB 
 	) AS xmlData
 	;WITH XMLNAMESPACES(N'http://www.w3.org/2001/XMLSchema-instance' as xsi, 'http:/www.sat.gob.mx/cfd/LCO' as lco)
 
@@ -62,7 +62,7 @@ BEGIN
     DECLARE @xmlDoc XML
 SELECT @xmlDoc = BulkColumn
 FROM OPENROWSET (
-	BULK 'D:\Mis documentos\GitHub\LCDAlberto\PrimerEjercicio\PrimerEjercicio\bin\archivos\a2nuevo.xml', SINGLE_CLOB 
+	BULK 'c:\archivo\a2nuevo.xml', SINGLE_CLOB 
 	) AS xmlData
 	;WITH XMLNAMESPACES(N'http://www.w3.org/2001/XMLSchema-instance' as xsi, 'http:/www.sat.gob.mx/cfd/LCO' as lco)
 
@@ -94,7 +94,7 @@ BEGIN
 --SET @filePath = 'C:\Users\ACER\Documents\LCO.xml'
 SELECT @xmlDoc = BulkColumn
 FROM OPENROWSET (
-	BULK 'D:\Mis documentos\GitHub\LCDAlberto\PrimerEjercicio\PrimerEjercicio\bin\archivos\a3nuevo.xml', SINGLE_CLOB 
+	BULK 'c:\archivo\a3nuevo.xml', SINGLE_CLOB 
 	) AS xmlData
 	;WITH XMLNAMESPACES(N'http://www.w3.org/2001/XMLSchema-instance' as xsi, 'http:/www.sat.gob.mx/cfd/LCO' as lco)
 --PRINT CAST(@xmlDoc as varchar(max)) 
@@ -125,7 +125,7 @@ BEGIN
     DECLARE @xmlDoc XML
 SELECT @xmlDoc = BulkColumn
 FROM OPENROWSET (
-	BULK 'D:\Mis documentos\GitHub\LCDAlberto\PrimerEjercicio\PrimerEjercicio\bin\archivos\a4nuevo.xml', SINGLE_CLOB 
+	BULK 'c:\archivo\a4nuevo.xml', SINGLE_CLOB 
 	) AS xmlData
 	;WITH XMLNAMESPACES(N'http://www.w3.org/2001/XMLSchema-instance' as xsi, 'http:/www.sat.gob.mx/cfd/LCO' as lco)
 

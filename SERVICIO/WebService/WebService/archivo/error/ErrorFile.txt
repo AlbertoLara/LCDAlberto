@@ -1,0 +1,1 @@
+Excepción durante una solicitud WebClient.
